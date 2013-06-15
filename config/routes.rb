@@ -1,4 +1,6 @@
 AlphaChop::Application.routes.draw do
+  devise_for :users
+
   resources :snps
   root :to => "snps#index"
 
