@@ -1,6 +1,6 @@
 AlphaChop::Application.routes.draw do
   resources :snps
-
+  root :to => "snps#index"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
