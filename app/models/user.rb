@@ -20,7 +20,7 @@ class User < ActiveRecord::Base
                              message: 'Must be formatted correctly.'
                            }
 
-  has_many :statuses
+  has_many :snps
 
   def full_name
   	first_name + " " + last_name
