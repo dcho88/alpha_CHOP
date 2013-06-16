@@ -1,4 +1,5 @@
 class SnpsController < ApplicationController
+  before_filter  :authenticate_user!, only: [:new, :create]
   # GET /snps
   # GET /snps.json
   def index
