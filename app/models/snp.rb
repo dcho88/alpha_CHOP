@@ -1,3 +1,3 @@
 class Snp < ActiveRecord::Base
-  attr_accessible :content, :name
+  attr_accessible :content
 end
