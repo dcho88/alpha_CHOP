@@ -1,4 +1,6 @@
 AlphaChop::Application.routes.draw do
+  get "home/index"
+
   get "profiles/show"
 
   devise_for :users
@@ -10,7 +12,7 @@ AlphaChop::Application.routes.draw do
   end
 
   resources :snps
-  root :to => "snps#index"
+  root :to => "home#index"
 
   get '/:id', to: 'profiles#show'
 
