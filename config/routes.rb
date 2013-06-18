@@ -15,6 +15,7 @@ AlphaChop::Application.routes.draw do
   root :to => "home#index"
 
   get '/:id', to: 'profiles#show'
+  match "/:id" => "profiles#show"
 
 
 
