@@ -14,12 +14,7 @@ class SnpsController < ApplicationController
   # GET /snps/1
   # GET /snps/1.json
   def show
-    @snp = Snp.find(params[:id])
 
-    respond_to do |format|
-      format.html # show.html.erb
-      format.json { render json: @snp }
-    end
   end
 
   # GET /snps/new
